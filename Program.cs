@@ -26,6 +26,7 @@ class Program
             {
                 case 1:
                     Console.WriteLine("Has seleccionado Suma.");
+                    Suma();
                     break;
                 case 2:
                     Console.WriteLine("Has seleccionado Resta.");
@@ -51,4 +52,16 @@ class Program
             }
         }
     }
+    static void Suma()
+{
+    Console.Write("Ingrese el primer número: ");
+    double num1 = Convert.ToDouble(Console.ReadLine());
+
+    Console.Write("Ingrese el segundo número: ");
+    double num2 = Convert.ToDouble(Console.ReadLine());
+
+    double resultado = num1 + num2;
+
+    Console.WriteLine("La suma es: " + resultado);
+}
 }
